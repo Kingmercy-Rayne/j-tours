@@ -14,7 +14,8 @@ export default {
   top: 0;
   right: 0;
   min-height: 10vh;
-//   padding: 0.2em;
+  padding: 0.2em;
   border: solid thin green;
+  z-index:10;
 }
 </style>

@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 :root {
-  --bg-color--primary: rgb(24, 21, 21);
   --bg-color--alt: rgb(20, 20, 17);
   --bg-color--tri: rgb(26, 27, 29);
   --text-color--primary: #fff;
   --text-color--alt: #e9204f;
   --text-color--tri: #777;
-  --border-color--primary: #e9204f;
+  --border-color--primary: #fff;
   --border-color--alt: #f2532b;
-  --button-bg-color: transparent;
+  --button-bg-color--primary: #e9204f;
   --button-bg-color--alt: #191919;
   --font-family--primary: 'Catamaran';
   --font-family--alt: 'Montserrat';

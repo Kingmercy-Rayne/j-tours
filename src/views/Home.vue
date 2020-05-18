@@ -4,27 +4,35 @@
       <img src="../assets/img/jean-vella-AMUXeE7Y2Vc-unsplash.jpg" alt="" />
     </div>
     <div class="backdrop__filter"></div>
-    <main class="main">swsws;lw;lsw;lw;</main>
+    <slide-bar />
+    <main-content />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import MainContent from '@/components/MainContent.vue';
+import SlideBar from '@/components/SlideBar.vue';
 
 export default {
   name: 'Home',
+  components: {
+    MainContent,
+    SlideBar,
+  },
 };
 </script>
 <style lang="stylus" scoped>
 .home {
   position: relative;
-  border: solid thin yellow;
+  // border: solid thin yellow;
   min-height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 0;
+  padding-top:6em;
 
   .backdrop__img {
     position: absolute;
@@ -49,11 +57,6 @@ export default {
     bottom: 0;
     z-index: 0;
     background: rgba(0, 0, 0, 0.5);
-  }
-
-  .main {
-    z-index: 5;
-    color: white;
   }
 }
 </style>
