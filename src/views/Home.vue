@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="backdrop__img">
-      <img src="../assets/img/jean-vella-AMUXeE7Y2Vc-unsplash.jpg" alt="" />
+      <img src="../assets/img/jc3211-BpEH3K1G520-unsplash.jpg" alt="" />
     </div>
     <div class="backdrop__filter"></div>
     <slide-bar />
@@ -46,6 +46,7 @@ export default {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: right bottom;
     }
   }
 
@@ -56,7 +57,7 @@ export default {
     right: 0;
     bottom: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.65);
   }
 }
 </style>

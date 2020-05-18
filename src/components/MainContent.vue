@@ -1,6 +1,9 @@
 <template>
   <main class="main">
-    <h1>Wonderful Japan</h1>
+    <h1>
+      <span>Wonderful </span>
+      <span>Japan</span>
+    </h1>
     <div class="promotion__video">
       <button class="play__button"><i class="fas fa fa-play"></i></button>
       <div class="promotion__text">
@@ -21,39 +24,45 @@ export default {
 .main {
   z-index: 5;
   min-height: 50vh;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   margin-right: auto;
-  padding: 2em;
+  // border: solid thin red;
   color: white;
-  border: solid thin red;
 
   h1 {
-    font-family: var(--font-family--alt);
-    font-weight: 700;
-    font-size: 3rem;
+    font-family: var(--font-family--primary);
+    font-weight: 800;
+    font-size: 3.8rem;
+    // line-height: 4rem;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .promotion__video {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid thin var(--border-color--primary);
+    // border: solid thin var(--border-color--primary);
     padding: 0.3em 0;
+    margin: 2em 0;
     font-family: var(--font-family--alt);
 
     .play__button {
       text-align: center;
       border: solid thin var(--border-color--primary);
       border-radius: 50%;
-      padding: 0.2em;
-      margin: 0 1em;
+      padding: 0.4em;
+      margin-right:1em;
 
       i {
         font-size: 0.8rem;
-        padding: 0.2em;
+        padding: 0.4em;
       }
     }
 
@@ -64,9 +73,8 @@ export default {
       justify-content: center;
       padding: 0.2em;
       text-align: center;
-      font-family: var(--font-family--alt)
-      font-weight:400;
-      border: solid thin green;
+      font-family: var(--font-family--alt);
+      font-weight: 400;
 
       h5 {
         margin-top: 0.4em;
