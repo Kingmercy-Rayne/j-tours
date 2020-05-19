@@ -26,6 +26,10 @@ export default {
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 480px) {
+    left: 0;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -52,7 +56,11 @@ export default {
 
     h3 {
       padding: 1em 0;
-      word-break: 2rem;
+      text-align: left;
+
+      @media screen and (max-width: 1000px) {
+        font-size: 0.8rem;
+      }
     }
 
     button {
@@ -70,8 +78,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10em;
-    // padding:1em;
+    // height: 8em;
+    padding: 1em;
     width: 12em;
     margin: 0em 1em;
 

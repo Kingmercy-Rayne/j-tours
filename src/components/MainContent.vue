@@ -32,6 +32,10 @@ export default {
   // border: solid thin green;
   color: white;
 
+  @media screen and (max-width: 480px) {
+    align-items: center;
+  }
+
   h1 {
     font-family: var(--font-family--alt);
     font-weight: 800;
@@ -41,6 +45,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media screen and (max-width: 480px) {
+      align-items: center;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2.5rem;
+    }
   }
 
   .promotion__video {
@@ -62,6 +74,11 @@ export default {
       i {
         font-size: 0.8rem;
         padding: 0.4em;
+
+        @media screen and (max-width: 1000px) {
+          font-size: 0.6rem;
+          padding: 0.3em;
+        }
       }
     }
 
@@ -74,6 +91,10 @@ export default {
       text-align: center;
       font-family: var(--font-family--alt);
       font-weight: 400;
+
+      @media screen and (max-width: 800px) {
+        font-size: 0.9rem;
+      }
 
       h5 {
         margin-top: 0.4em;

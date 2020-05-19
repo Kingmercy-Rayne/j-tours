@@ -53,6 +53,10 @@ export default {
       height: 100%;
       object-fit: cover;
       object-position: right bottom;
+
+      @media screen and (max-width: 1000px) {
+        object-position: center bottom;
+      }
     }
   }
 
@@ -73,7 +77,12 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
     // margin: 0 5%;
+    @media screen and (max-width: 480px) {
+      font-size: 0.8rem;
+      width: 100%;
+    }
   }
 }
 </style>
