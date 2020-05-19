@@ -8,6 +8,7 @@
       <slide-bar />
       <main-content />
     </section>
+    <the-infographic />
   </div>
 </template>
 
@@ -15,12 +16,14 @@
 // @ is an alias to /src
 import MainContent from '@/components/MainContent.vue';
 import SlideBar from '@/components/SlideBar.vue';
+import TheInfographic from '@/components/TheInfographic.vue';
 
 export default {
   name: 'Home',
   components: {
     MainContent,
     SlideBar,
+    TheInfographic,
   },
 };
 </script>
@@ -31,6 +34,7 @@ export default {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   z-index: 0;
@@ -63,12 +67,13 @@ export default {
   }
 
   section {
+    // flex-grow: 1;
     min-height: 50vh;
     // border: solid thin crimson;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    // margin: 0 5%;
   }
 }
 </style>
