@@ -1,11 +1,13 @@
 <template>
   <div class="home">
     <div class="backdrop__img">
-      <img src="../assets/img/jc3211-BpEH3K1G520-unsplash.jpg" alt="" />
+      <img src="../assets/img/ismael-abelleira-MZ00oma1sn0-unsplash.jpg" alt="" />
     </div>
     <div class="backdrop__filter"></div>
-    <slide-bar />
-    <main-content />
+    <section>
+      <slide-bar />
+      <main-content />
+    </section>
   </div>
 </template>
 
@@ -30,9 +32,9 @@ export default {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 0;
-  padding-top:6em;
+  padding-top: 6em;
 
   .backdrop__img {
     position: absolute;
@@ -57,7 +59,16 @@ export default {
     right: 0;
     bottom: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  section {
+    min-height: 50vh;
+    // border: solid thin crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
   }
 }
 </style>

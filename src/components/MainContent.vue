@@ -11,7 +11,7 @@
         <h5><span>JAPAN</span> July 2009</h5>
       </div>
     </div>
-    <button>Explore</button>
+    <button class="cta-btn">Explore</button>
   </main>
 </template>
 <script>
@@ -23,20 +23,19 @@ export default {
 <style lang="stylus" scoped>
 .main {
   z-index: 5;
-  min-height: 50vh;
-  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-right: auto;
-  // border: solid thin red;
+  // margin-right: auto;
+  padding: 0 2em;
+  // border: solid thin green;
   color: white;
 
   h1 {
-    font-family: var(--font-family--primary);
+    font-family: var(--font-family--alt);
     font-weight: 800;
-    font-size: 3.8rem;
+    font-size: 4rem;
     // line-height: 4rem;
     letter-spacing: 1.5px;
     display: flex;
@@ -50,7 +49,7 @@ export default {
     justify-content: space-between;
     // border: solid thin var(--border-color--primary);
     padding: 0.3em 0;
-    margin: 2em 0;
+    margin: 2.2em 0;
     font-family: var(--font-family--alt);
 
     .play__button {
@@ -58,7 +57,7 @@ export default {
       border: solid thin var(--border-color--primary);
       border-radius: 50%;
       padding: 0.4em;
-      margin-right:1em;
+      margin-right: 1em;
 
       i {
         font-size: 0.8rem;
@@ -80,6 +79,12 @@ export default {
         margin-top: 0.4em;
       }
     }
+  }
+
+  .cta-btn {
+    background: var(--button-bg-color--primary);
+    border: none;
+    border-radius: 0.5em;
   }
 }
 </style>
