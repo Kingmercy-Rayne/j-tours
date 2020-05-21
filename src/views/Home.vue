@@ -54,7 +54,7 @@ export default {
       object-fit: cover;
       object-position: right bottom;
 
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 10cd mosaic-reddit00px) {
         object-position: center bottom;
       }
     }

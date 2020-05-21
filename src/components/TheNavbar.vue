@@ -1,9 +1,10 @@
 <template>
   <nav class="nav">
     <div class="logo__container">
-      <span class="logo">
-        <img src="../assets/img/japan-flag-icon-16.png" alt="" />
-      </span>
+      <img src="../assets/img/japan-flag-icon-16.png" alt="" />
+      <!-- <span class="logo"> -->
+      <!-- <img src="../assets/img/japan-flag-icon-16.png" alt="" /> -->
+      <!-- </span> -->
       <span>JTours</span>
     </div>
     <ul>
@@ -75,8 +76,8 @@ export default {
   color: var(--text-color--primary);
 
   .logo__container {
-    padding: 0.2em;
-    border: solid thin green;
+    padding: 0.2em 0.5em;
+    // border: solid thin green;
     display: flex;
     align-items: center;
 
@@ -84,18 +85,20 @@ export default {
       justify-self: flex-end;
     }
 
-    .logo {
-      border: solid thin white;
-      width: 1.2rem;
-      height: 1.1rem;
-      // padding:1em;
-      border-radius: 10%;
+    // .logo {
+    // border: solid thin white;
+    // width: 1.2rem;
+    // height: 1.1rem;
+    // // padding:1em;
+    // border-radius: 10%;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    // }
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center center;
     }
 
     span {
@@ -109,6 +112,10 @@ export default {
     width: 40%;
     margin: 0 4em;
     margin-left: auto;
+
+    @media screen and (max-width: 100px) {
+      font-size: 0.7rem;
+    }
 
     @media screen and (max-width: 800px) {
       display: none;
